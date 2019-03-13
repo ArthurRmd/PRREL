@@ -13,18 +13,15 @@ public class Segment {
 
     public Segment(Point a , Point b){
 
-      int xa = a.getX();
-      int ya = a.getY();
-
-      this.a.setX(xa);
-      this.a.setY(ya);
-
+        int xa = a.getX();
+        int ya = a.getY();
 
         int xb = b.getX();
         int yb = b.getY();
 
-        this.b.setX(xb);
-        this.b.setY(yb);
+        this.a = new Point(xa, ya );
+        this.b = new Point(xb, yb );
+
 
 
     }
@@ -33,11 +30,8 @@ public class Segment {
 
     public Segment(int xa , int ya , int xb, int yb) {
 
-        this.b.setX(xb);
-        this.b.setY(yb);
-
-        this.a.setX(xa);
-        this.a.setY(ya);
+        this.a = new Point(xa, ya );
+        this.b = new Point(xb, yb );
 
     }
 
@@ -57,9 +51,12 @@ public class Segment {
         return Math.sqrt(nombre);
 
 
+    }
 
-
-
+    public String toString(){
+        String chaine = new String();
+        chaine = ("Segment(" + this.a.getX() + ";" + this.a.getY() + ")" + ";" + "(" + this.b.getX() + ";" + this.b.getY() + ")");
+        return chaine;
     }
 
 
