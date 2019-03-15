@@ -12,7 +12,7 @@ class Main{
 	p2.setX(-1);p2.setY(6);
 	Segment s2 = new Segment(p1,p2);
 	
-	System.out.println(s1);
+	System.out.println(s1 + "ok");
 	System.out.println(s2);
 
 

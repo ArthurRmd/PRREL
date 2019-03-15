@@ -27,12 +27,32 @@ public class Carre {
       this.d = new Segment(xa+valeur,ya, xa+valeur,ya+valeur);
 
 
+  }
+  public String toString(){
+        String chaine = new String();
+      /*  String s1 = new String (a.toString());
+      String s2 = new String (b.toString());
+      String s3 = new String (c.toString());
+      String s4 = new String (d.toString());
+
+      chaine = ( s1 + "\n"+ s2 + "\n"+ s3 + "\n"+s4);
+
+*/
+
+        chaine = ( a + "\n"+ b + "\n"+ c + "\n"+ d);
 
 
 
+        return chaine;
+
+  }
 
 
 
+  public double perimetre(){
+
+        double longueur = (a.longueur())*4;
+        return longueur;
   }
 
 }
